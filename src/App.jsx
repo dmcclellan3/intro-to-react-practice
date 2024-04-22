@@ -16,11 +16,11 @@ function App() {
   const [counter, setCounter] = useState(0);
   const incrementCounter = () => setCounter(counter + 1);
   let decrementCounter = () => setCounter(counter - 1);
-  // console.log(counter)
+
   return (
     <div 
       className="bg-dark h-100 p-5"
-      style={{ color: 'white' }}
+      style={{ color: 'white'}}
     >
       <Link className="text-light" to='./About'>About</Link>
       <br></br>
@@ -28,11 +28,17 @@ function App() {
       <Title />
       <div className="counter-button"
         onClick={incrementCounter}
-      >
-        <button type="button" className="btn btn-primary">Counter</button>
+        >
+        <button type="button" className="btn btn-primary">Increment</button>
         <br></br>
-        {counter}
+        <br></br>
       </div>
+        <div className="decrement-counter-button" onClick={decrementCounter}>
+        <button type="button" className="btn btn-primary">Decrement</button>
+         
+         </div>
+         {counter}
+        
     </div>
   )
 }
