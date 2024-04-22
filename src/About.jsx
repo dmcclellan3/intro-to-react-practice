@@ -4,6 +4,8 @@ function About() {
   return (
     <div className="p-5">
       <Link to='/'>{'<- Back'}</Link>
+      <br></br>
+      <Link to='/Contacts'>{'Contacts'}</Link>
       <h1>About Page</h1>
     </div>
   )
